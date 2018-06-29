@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" href="../css/search.css"><script src="../js/lib/require.js"></script></head><body><script>require(['../js/config'], function() {
+            require(['search']);
+        })</script><div class="wrap"><header><a href="../index.html">返回</a> <input type="text" class="look" placeholder="输入书名/作者/关键字"> <button class="look-btn">搜索</button></header><div class="num"><div class="content"></div><div class="search-history"><h2>历史：</h2><ul class="history-cont"></ul></div></div></div><script class="text" type="text/x-handlebars-template">{{#each ads}}
+        <a href="javascript:;">{{ad_name}}</a> {{/each}}</script><script class="history" type="text/x-handlebars-template">{{#each this}}
+        <li>{{this}} <em class="remove" data-id="{{@index}}">X</em></li>
+        {{/each}}</script></body></html>
